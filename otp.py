@@ -31,3 +31,16 @@ otp_raw= otp_int % 10**6
 otp = '{:06d}'.format(otp_raw)
 
 print('Your OTP is :',otp)
+
+
+# Get the user's input for the OTP
+user_otp = input('Enter your OTP:>>>>>> ')
+
+# Verifying the OTP
+if int(user_otp) == int(otp):
+    print('OTP is valid')
+else:
+    try:
+        num = int('abc')
+    except ValueError:
+      print('OTP is invalid')
