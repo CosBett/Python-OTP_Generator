@@ -5,7 +5,7 @@ sequenceDiagram
     User->>+App UI:Enters Phone No.
     App UI->>-OTP Server:Sends phone no for OTP 
     participant OTP Server
-    Note right of OTP Server: Generates otp valid for 120s
+    Note right of OTP Server: Generates otp valid for 300s
     OTP Server->>+SMS Client: Sends 6 digit code and phone no.
     SMS Client-->>-User: SMS with 6 digits code
     User->>+App UI: Enter code
